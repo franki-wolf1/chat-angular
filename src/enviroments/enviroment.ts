@@ -1,3 +1,3 @@
-export const enviroment ={
-    
+export const enviroment = {
+    sdfasdfsdfsdfas: 'asdasdadasd'
 }
