@@ -2,7 +2,7 @@
 
 # Compiled output
 /public
-/src/environment
+/src/environments
 /tmp
 /out-tsc
 /bazel-out
