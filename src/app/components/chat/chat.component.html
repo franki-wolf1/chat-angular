@@ -1,1 +1,35 @@
-asdasd
+<div class="chat_window">
+  <div class="title d-flex align-items-center">
+    <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-phone-icon-png-image_6315989.png" width="45px" height="45px">
+    <h3 class="wsp" (click)="listenerMessage()">WhatsApp</h3>
+  </div> 
+  <div class="top_menu">
+    <div class="buttons">
+      <div class="button close"></div>
+      <div class="button minimize"></div>
+      <div class="button maximize"></div>
+    </div>
+  </div>
+
+  <ul class="messages">
+    <li class="message right" *ngFor="let item of messageList"
+    [ngClass]="{'left': item.message_side === 'receiver', 'right': item.message_side === 'sender'}">
+      <div class="avatar"></div>
+      <div class="text_wrapper">
+        <div class="text">{{ item.message }}</div>
+      </div>
+    </li>
+  </ul>
+  
+  
+  <div class="bottom_wrapper clearfix">
+    <div class="message_input_wrapper">
+      <!-- Corregir el binding ngModel y agregar el atributo name -->
+      <input class="message_input" placeholder="Message..." [(ngModel)]="messageInput" name="messageInput" />
+    </div>
+    <div class="send_message" (click)="sendMessage()">
+      <div class="icon"></div>
+      <div class="text">Send</div>
+    </div>
+  </div>
+</div>

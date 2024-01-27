@@ -1,9 +1,17 @@
-import { Routes } from '@angular/router';
-
+import { Routes } from '@angular/router'; 
+import ChatComponent from './components/chat/chat.component';
 export const routes: Routes = [
-    {
-        path: '',
-        //component: ChatComponent
-        loadComponent: () => import('./components/chat/chat.component')
-    }
+  {
+    path: '',
+    redirectTo: 'chat/',
+    pathMatch: 'full'
+  },
+  {
+    path: 'chat/:userId',
+    component: ChatComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'chat/'
+  }
 ];

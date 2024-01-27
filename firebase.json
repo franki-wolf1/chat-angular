@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/chat-springboot-angular",
+    "public": "dist/chat-springboot-angular/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

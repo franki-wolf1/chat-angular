@@ -26,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## More documentation
+(https://unpocodejava.com/2018/02/11/que-es-sockjs-y-por-que-usarlo-en-lugar-de-usar-el-api-de-websockets-directamente/)
